@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Noto+Sans+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    height: 15vh;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.logo{
+    margin:10px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.logo span{
+    text-align: center;
+    text-decoration: none;
+    color: #793a3a;
+    font-size: x-large;
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: 0px 10px
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px
+}
+.links ul li a{
+    text-decoration: none;
+    color: #5f5f5f;
+}
+.links ul li a:hover{
+    color: chocolate;
+}
+main{
+    height: calc(80vh - 20vh);
+    background-color: maroon;
+    margin: 10px 10px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.content{
+    padding: 10px 10px;
+}
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    height: 10vh;
+    border-radius: 10px;
+    font-size: larger;
+    background-color: darkslateblue;
+    color: #ffffff;
+}
+footer p{
+    font-family: 'Noto Sans Mono', monospace;
+}

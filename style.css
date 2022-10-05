@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Noto+Sans+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url("./pexels-moose-photos-1037992.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    height: 15vh;
+}
+.logo{
+    margin:10px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.logo span{
+    text-align: center;
+    text-decoration: none;
+    color: #793a3a;
+    font-size: x-large;
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: 0px 10px
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px
+}
+.links ul li a{
+    text-decoration: none;
+    color: #5f5f5f;
+}
+.links ul li a:hover{
+    color: chocolate;
+}
+main{
+    height: 75vh;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+.content{
+    width: 97%;
+    position: absolute;
+    top: 30%;
+}
+.left-side{
+    margin-left: 6%;
+    font-family: 'Gemunu Libre', sans-serif;
+    line-height: 70px;
+    color: #ffffff;
+    font-size: x-large;
+    float: left;
+}
+.right-side{
+    font-family: 'Gemunu Libre', sans-serif;
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 6%;
+    margin-top: 90px;
+
+}
+.right-side img{
+    margin-left: 10px;
+}
+#playPause{
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    height: 5vh;
+    font-size: larger;
+}
+footer p{
+    font-family: 'Noto Sans Mono', monospace;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Recommendation Tool</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./apple-music-icon.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./apple-music-icon.svg" alt="" width="50px"
+          /></a>
+          <span>SoundSuggest</span>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#">RECOMMENDATION</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="left-side">
+          <h1>LISTEN<br />RECOMMEND<br />CHILL</h1>
+        </div>
+        <div class="right-side">
+          <p>Click here to play recommended music</p>
+          <img
+            src="./red-play-button-icon.svg"
+            alt="play"
+            width="50px"
+            id="playPause"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; VESIT</p>
+    </footer>
+    <audio id="playSong">
+      <source
+        src="Fredji - Happy Life (Vlog No Copyright Music).mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <script>
+      var playSong = document.getElementById("playSong");
+      var playPause = document.getElementById("playPause");
+      playPause.onclick = function(){
+        if(playSong.paused){ 
+            playSong.play();
+            playPause.src = "pause-button-outline-red-icon.svg"
+        }
+        else{
+            playSong.pause();
+            playPause.src = "red-play-button-icon.svg"
+        }
+      }
+    </script>
+  </body>
+</html>
