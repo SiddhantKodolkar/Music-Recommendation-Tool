@@ -9,7 +9,7 @@
     justify-content: space-between;
     margin: 10px 10px;
     height: 15vh;
-    background-color: aquamarine;
+    background-color: rgba(255, 255, 255,0.2);
     border-radius: 10px;
 }
 .logo{
@@ -22,7 +22,7 @@
 .logo span{
     text-align: center;
     text-decoration: none;
-    color: #793a3a;
+    color: rgb(255, 255, 0);
     font-size: x-large;
     font-family: 'Gemunu Libre', sans-serif;
     margin: 0px 10px
@@ -40,14 +40,21 @@
 }
 .links ul li a{
     text-decoration: none;
-    color: #5f5f5f;
+    color: rgb(255, 255, 0);
 }
 .links ul li a:hover{
     color: chocolate;
 }
+body{
+    background-image: url("https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg?w=996&t=st=1665080952~exp=1665081552~hmac=5f4db69f0aaadddd6d93c4e294f4014531f5640070cbd5e957a178d27dcdb315");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
 main{
     height: calc(80vh - 20vh);
-    background-color: maroon;
+    background-color: rgba(128, 0, 0,0.5);
     margin: 10px 10px;
     border-radius: 10px;
     color: #ffffff;
@@ -64,7 +71,7 @@ footer{
     height: 10vh;
     border-radius: 10px;
     font-size: larger;
-    background-color: darkslateblue;
+    background-color: rgba(72, 61, 139,0.5);
     color: #ffffff;
 }
 footer p{

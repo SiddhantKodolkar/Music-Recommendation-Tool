@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendation</title>
+    <link
+      rel="shortcut icon"
+      href="./apple-music-icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./recommendation.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./apple-music-icon.svg" alt="" width="50px"
+          /></a>
+          <span>SoundSuggest</span>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./recommendation.css">RECOMMENDATION</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="left-side">
+          <h1>RECOMMENDATIONS</h1>
+        </div>
+        <div class="right-side">
+          <h2>Top recommended Songs</h2>
+          <br />
+          <hr />
+          <br />
+          <div class="songs">
+            <div id="aiw">
+              <img
+                src="https://pagalworld.com.vc/uploads/thumb/sft6/2951_4.jpg"
+                alt="asitwas"
+                id="thumbnail"
+              />
+              <p>As it was</p>
+              <div onclick="songPlay(1);">
+                <audio id="1">
+                  <source
+                    src="https://hindimp3s.in/files/download/id/2005"
+                    type="audio/mpeg"
+                  />
+                </audio>
+                <img
+                  src="./red-play-button-icon.svg"
+                  alt="play"
+                  width="50px"
+                  id="playPause"
+                />
+              </div>
+            </div>
+            <div id="stay">
+
+              <img
+                src="https://i1.sndcdn.com/artworks-D5hmCb17GnqTy7uV-SSoZtw-t500x500.jpg"
+                alt="stay"
+                id="thumbnail"
+              />
+              <p>Stay ft.Justin Bieber</p>
+              <div>
+
+                <img
+                  src="./red-play-button-icon.svg"
+                  alt="play"
+                  width="50px"
+                  id="playPause"
+                />
+              </div>
+            </div>
+            <div id="sunroof">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/3b/Nicky_Youre_-_Sunroof.png"
+                alt="sunroof"
+                id="thumbnail"
+              />
+              <p>Sunroof</p>
+              <div>
+                </audio>
+                <img
+                  src="./red-play-button-icon.svg"
+                  alt="play"
+                  width="50px"
+                  id="playPause"
+                />
+              </div>
+            </div>
+            <div id="doja">
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/e/e5/Central_Cee_-_Doja.png"
+                alt="asitwas"
+                id="thumbnail"
+              />
+              <p>Doja</p>
+              <div>
+
+                <audio id="2">
+                  <source src="https://cdn.trendybeatz.com/audio/The-Kid-Laroi-Ft-Justin-Bieber-Stay-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                </audio>
+                <img
+                  src="./red-play-button-icon.svg"
+                  alt="play"
+                  width="50px"
+                  id="playPause"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function songPlay(id) {
+        var playSong = document.getElementById(id);
+        var playPause = document.getElementById("playPause");
+        if (playSong.paused) {
+          playSong.play();
+          playPause.src = "pause-button-outline-red-icon.svg";
+        } else {
+          playSong.pause();
+          playPause.src = "red-play-button-icon.svg";
+        }
+      }
+    </script>
+  </body>
+</html>
