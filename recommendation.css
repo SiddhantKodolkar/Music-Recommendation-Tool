@@ -83,9 +83,17 @@ main{
     flex-flow: column;
     overflow: scroll;
     height: 50vh;
+    padding: 0 10px;
 }
 .songs::-webkit-scrollbar{
-    width: 0;
+    width: 0.4rem;;
+}
+
+.songs::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 10px;
+   
+   
 }
 #thumbnail{
     width:60px;
