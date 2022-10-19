@@ -35,22 +35,22 @@
       <div class="loginForm">
         <h1>LOGIN FORM</h1>
         <form action="#" method="post">
-          <label>Username</label><br><br>
+          <label>Username</label><br /><br />
           <input
             type="text"
             name="user"
             id="user"
             placeholder="Enter your username"
-          /><br><br>
-          <label>Password</label><br><br>
+          /><br /><br />
+          <label>Password</label><br /><br />
           <input
             type="password"
             name="psswd"
             id="psswd"
             placeholder="Enter your password"
-          /><br><br>
+          /><br /><br />
           <div class="btnCenter">
-            <button type="submit" onclick="login()">LOGIN</button>
+            <button type="reset" onclick="login()">LOGIN</button>
           </div>
         </form>
       </div>
@@ -60,16 +60,18 @@
     </footer>
   </body>
   <script>
-    function login(){
-        var userName = document.getElementById("user").value;
-        var psswd = document.getElementById("psswd").value;
-        if(userName == "sahilmadhyan" && psswd == "sahil123"){
-            alert("Login Successful");
-            window.open("https://sahil-madhyan.github.io/Music-Recommendation-Tool/", "_self");
-        }
-        else{
-            alert("Login Failed")
-        }
+    function login() {
+      var userName = document.getElementById("user").value;
+      var psswd = document.getElementById("psswd").value;
+      if (userName == "sahilmadhyan" && psswd == "sahil123") {
+        alert("Login Successful");
+        window.open(
+          "https://sahil-madhyan.github.io/Music-Recommendation-Tool/",
+          "_self"
+        );
+      } else {
+        alert("Login Failed");
+      }
     }
   </script>
 </html>
